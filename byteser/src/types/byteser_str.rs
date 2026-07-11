@@ -2,15 +2,15 @@ use crate::byteser::ByteSerializable;
 
 
 impl ByteSerializable for String {
-    fn byteSerialize(&self, out: &mut Vec<u8>) {
+    fn byte_serialize(&self, out: &mut Vec<u8>) {
         let bytes = self.as_bytes();
         let length = bytes.len() as u32;
-        length.byteSerialize(out);
+        length.byte_serialize(out);
         out.extend_from_slice(bytes);
     }
 
-    fn byteDeserialize(input: &mut &[u8]) -> Result<Self, String> {
-        let length = u32::byteDeserialize(input)?;
+    fn byte_deserialize(input: &mut &[u8]) -> Result<Self, String> {
+        let length = u32::byte_deserialize(input)?;
         if input.len() < length as usize {
             return Err("Unexpected end of input".to_string());
         }

@@ -17,10 +17,10 @@ fn roundtrip_works_for_supported_types() {
     };
 
     let mut bytes = Vec::new();
-    original.byteSerialize(&mut bytes);
+    original.byte_serialize(&mut bytes);
 
     let mut slice: &[u8] = &bytes;
-    let decoded = TestStruct::byteDeserialize(&mut slice).expect("deserialize failed");
+    let decoded = TestStruct::byte_deserialize(&mut slice).expect("deserialize failed");
 
     assert_eq!(decoded, original);
     assert!(slice.is_empty(), "input should be fully consumed");
