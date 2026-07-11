@@ -18,9 +18,10 @@ pub fn derive_byte_serializable(input: TokenStream) -> TokenStream {
 
     let serialize_fields = fields.iter().map(|field| {
         let ident = field.ident.as_ref().unwrap();
+        let ty = &field.ty;
 
         quote! {
-            <#ident as byteser::ByteSerializable>::byteSerialize(&self.#ident, out);
+            <#ty as byteser::ByteSerializable>::byteSerialize(&self.#ident, out);
         }
     });
 

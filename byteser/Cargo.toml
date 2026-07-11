@@ -3,4 +3,7 @@ name = "byteser"
 version = "0.1.0"
 edition = "2024"
 
+[dev-dependencies]
+byteser_derive = { path = "../byteser_derive" }
+
 [dependencies]
