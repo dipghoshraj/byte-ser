@@ -6,12 +6,23 @@ version = 4
 name = "byteser"
 version = "0.1.0"
 dependencies = [
- "byteser_derive",
+ "byteser_derive 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "byteser_derive"
 version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "byteser_derive"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e206cdc1e158c0c48cc8752ce9064c620e05d9a476062a6cba2da55262c13e67"
 dependencies = [
  "proc-macro2",
  "quote",
