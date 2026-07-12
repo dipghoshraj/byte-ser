@@ -27,6 +27,14 @@ byteser = { path = "./byteser" }
 byteser_derive = { path = "./byteser_derive" }
 ```
 
+Or install directly from GitHub:
+
+```toml
+[dependencies]
+byteser = { git = "https://github.com/dipghoshraj/byte-ser", package = "byteser" }
+byteser_derive = { git = "https://github.com/dipghoshraj/byte-ser", package = "byteser_derive" }
+```
+
 In your Rust code:
 
 ```rust

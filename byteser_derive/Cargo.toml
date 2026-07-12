@@ -2,6 +2,10 @@
 name = "byteser_derive"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+description = "Procedural macro for deriving ByteSerializable trait"
+repository = "https://github.com/dipghoshraj/byte-ser"
+readme = "README.md"
 
 [lib]
 proc-macro = true
