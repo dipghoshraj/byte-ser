@@ -2,6 +2,10 @@
 name = "byteser"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+description = "A light weight trait for converting the types to bytes and deserialize into the data type. Just to escape serde increasing the binary size, if you don't have hard constrain for binary size then there is no point of using this"
+repository = "https://github.com/dipghoshraj/byte-ser"
+readme = "../README.md"
 
 [dev-dependencies]
 byteser_derive = "0.1.0"
