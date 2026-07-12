@@ -5,7 +5,7 @@ edition = "2024"
 license = "MIT"
 description = "Procedural macro for deriving ByteSerializable trait"
 repository = "https://github.com/dipghoshraj/byte-ser"
-readme = "README.md"
+readme = "../README.md"
 
 [lib]
 proc-macro = true
